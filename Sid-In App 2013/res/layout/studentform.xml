@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formActivityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ehb_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="500dp" >
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="1" >
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtEmailField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:inputType="textEmailAddress"
+                                android:singleLine="true" >
+
+                                <requestFocus />
+                            </EditText>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewFirstName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtFirstNameField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextFirstName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textCapWords"
+                                android:singleLine="true" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewLastName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtLastNameField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextLastName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textCapWords"
+                                android:singleLine="true" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewStreet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtStreetField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextStreet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textCapWords"
+                                android:singleLine="true" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewStreetNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtStreetNumberField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextStreetNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="textPostalAddress"
+                                android:singleLine="true" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewZip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtZipField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <EditText
+                                android:id="@+id/editTextZip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:singleLine="true" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <TextView
+                                android:id="@+id/textViewCity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtCityField"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                            <Spinner
+                                android:id="@+id/spinnerCity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/textViewGeinteresseerdIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:text="@string/txtInterests"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp" >
+
+                        <CheckBox
+                            android:id="@+id/checkBoxDigx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_digx" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp" >
+
+                        <CheckBox
+                            android:id="@+id/checkBoxMultec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty" />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_multec" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/checkBoxWerkstudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtCheckBoxWerkstudent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right" >
+
+                        <Button
+                            android:id="@+id/buttonSaveData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtButtonSaveData" />
+
+                        <Button
+                            android:id="@+id/buttonEraseData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtButtonEraseData" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewSearchStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="23dp"
+                  android:layout_marginLeft="23dp"
+                android:ems="10"
+                android:hint="@string/hintSearchStudent"
+                android:inputType="textAutoComplete|textEmailAddress"
+                android:singleLine="true" />
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:foregroundGravity="top" >
+
+            </ImageSwitcher>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

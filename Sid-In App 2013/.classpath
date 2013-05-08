@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/org.restlet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/org.restlet.ext.httpclient.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/org.restlet.ext.jackson.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/org.codehaus.jackson.core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/org.codehaus.jackson.mapper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bert/Documents/android/workspace/Sid-In App 2013/libs/db4o-8.0.249.16098-core-java5.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sid-in App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="enterDeptCode">Geef departementale code</string>
+    <string name="deptcodenext">Volgende</string>
+    <string name="deptnotfound">De departementscode werd niet gevonden. Probeer opnieuw.</string>
+    <string name="ok">OK</string>
+    <string name="loginname">Naam</string>
+    <string name="loginevent">Event</string>
+    <string name="inloggen">Log in</string>
+    <string name="deptCodeURL">deptcodes.appspot.com</string>
+    <string name="noInternet">Controleer uw internet-aansluiting!</string>
+    <string name="tryAgain">Probeer opnieuw</string>
+    <string name="txtEmailField">E-mail</string>
+    <string name="txtFirstNameField">Voornaam</string>
+    <string name="txtLastNameField">Familienaam</string>
+    <string name="txtStreetField">Straat</string>
+    <string name="txtStreetNumberField">Nummer</string>
+    <string name="txtBusNumberField">Bus</string>
+    <string name="txtZipField">Postcode</string>
+    <string name="txtCityField">Gemeente</string>
+    <string name="txtInterests">Ik ben geïnteresseerd in</string>
+    <string name="txtCheckBoxDigx">Dig-X</string>
+    <string name="txtCheckBoxMultec">Multec</string>
+    <string name="txtCheckBoxIW">Industriële Wetenschappen</string>
+    <string name="txtCheckBoxSTER">Stedenbouw en ruimtelijke planning</string>
+    <string name="txtCheckBoxWerkstudent">Ik ben werkstudent</string>
+    <string name="txtButtonSaveData">Gegevens opslaan</string>
+    <string name="txtButtonEraseData">Gegevens wissen</string>
+    <string name="iwtreclame">Iwt is OK</string>
+    <string name="hintSearchStudent">Zoek student op email...</string>
+    <string name="txtLoginLoading">Even geduld, gegevens worden opgehaald...</string>
+    <string name="txtDeptCodeScreenLoadData">Even geduld, gegevens worden opgehaald...</string>
+    <string name="messageWrongInput">Gelieve volgende verplichte velden ook in te vullen:</string>
+    <string name="txtButtonSynchronize">Synchroniseer gegevens</string>
+    <string name="txtSynchronizing">Bezig met synchronizeren, even geduld...</string>
+    <string name="formSavedMessage">Uw gegevens werden goed bewaard.</string>
+    <string name="synchronizefailed">Er is een fout opgetreden bij het synchroniseren. Controleer de netwerkverbinding en probeer opnieuw.</string>
+    <string name="empty"></string>
+    <string name="txtHasToSynchronize">Er werden studentengegevens toegevoegd, synchronisatie vereist!</string>
+    <string name="txtSynchronizeTime">Laatste synchronisatie uitgevoerd op </string>
+
+</resources>
