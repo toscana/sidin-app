@@ -82,7 +82,6 @@ public class FormActivity extends FragmentActivity implements TextWatcher,
 	private StudentSearchAdapter mSearchAdapter;
 	private SpinnerCityAdapter mSpinnerCityAdapter;
 	private ScrollView mScrollView;
-	private int mScreenHeight;
 	private View mActivityRootView;
 
 	@Override
@@ -146,8 +145,7 @@ public class FormActivity extends FragmentActivity implements TextWatcher,
 		
 		DisplayMetrics metrics = new DisplayMetrics();
 		getWindowManager().getDefaultDisplay().getMetrics(metrics);
-		mScreenHeight = metrics.heightPixels;
-
+		
 		// setting imageswitcher properties for switching between images
 
 		// is.setImageResource(R.drawable.show2);
