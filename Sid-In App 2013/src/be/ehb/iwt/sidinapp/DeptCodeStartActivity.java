@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.app.FragmentActivity;
+import android.text.format.Time;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -31,6 +33,30 @@ public class DeptCodeStartActivity extends FragmentActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//instantiate year for database access
+		String year;
+		Time now = new Time();
+		now.setToNow();
+		
+		Time startAcadYear = new Time();
+		startAcadYear.year = now.year;
+		startAcadYear.month = 9;
+		startAcadYear.monthDay = 22;
+			
+		String lastTwo = (Integer.toString(now.year)).substring(2,4);
+		if(now.before(startAcadYear)){
+			//still in acadyear before september
+			year = (Integer.valueOf(lastTwo)-1) + lastTwo;
+			Log.d("bert","acadyear to us is" + year);
+		}
+		else{
+			//still in acadyear before september			
+			year = lastTwo + (Integer.valueOf(lastTwo)+1);
+			Log.d("bert","acadyear to us is" + year);
+		}
+		
+		Utilities.year = year;
 
 		// instantiate datamembers for gui
 		mProgressBar = (ProgressBar) findViewById(R.id.progressBarDeptScreen);

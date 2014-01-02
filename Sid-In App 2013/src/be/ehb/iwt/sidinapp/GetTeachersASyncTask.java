@@ -27,7 +27,7 @@ public class GetTeachersASyncTask extends
 		String url = arg0[0];
 
 		EngineConfiguration.getInstance();
-		ClientResource cr = new ClientResource("http://" + url + "/teachers");
+		ClientResource cr = new ClientResource("http://" + url + "/teachers/" + Utilities.year);
 		ITeachersResource resource = cr.wrap(ITeachersResource.class);
 		try {
 			TeacherList list = resource.retrieve();

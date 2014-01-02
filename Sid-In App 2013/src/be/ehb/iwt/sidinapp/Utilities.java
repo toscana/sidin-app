@@ -41,5 +41,8 @@ public class Utilities {
 	static final String DEPT_CODE = "DEPTCODE";
 	static final String DEPT_FRIENDLY_NAME = "DEPTFRIENDLYNAME";
 	static final String SYNCH_TIME = "SYNCHTIME";
+	static final String IMAGES_VERSION = "IMAGESVERSION";
+	
+	static String year="1213";
 	
 }

@@ -365,8 +365,7 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 
 	public void subscriptionUploadFinished(Boolean result) {
 		if(result.booleanValue()){
-			Db4oHelper.getInstance(this).eraseDB();
-			eraseImages();
+			Db4oHelper.getInstance(this).eraseDB();	
 			downloadData();
 		}
 		else{
@@ -382,22 +381,6 @@ public class LoginActivity extends FragmentActivity implements OnClickListener {
 		
 	}
 
-	private void eraseImages() {
-		// TODO Auto-generated method stub
-		int currentImage = 0;
-
-		while (true) {
-
-			File file = getFileStreamPath("pic" + currentImage + "resized.jpg");
-			File fileNormal = getFileStreamPath("pic" + currentImage + ".jpg");
-			if (file.exists()) {
-				file.delete();
-				fileNormal.delete();
-			} else
-				break;
-			currentImage++;
-		}
-
-	}
+	
 
 }

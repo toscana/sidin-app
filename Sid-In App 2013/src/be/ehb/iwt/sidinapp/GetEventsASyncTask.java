@@ -26,7 +26,7 @@ public class GetEventsASyncTask extends AsyncTask<String, Void, List<Event>> {
 		String url = arg0[0];
 
 		EngineConfiguration.getInstance();
-		ClientResource cr = new ClientResource("http://" + url + "/events");
+		ClientResource cr = new ClientResource("http://" + url + "/events/" + Utilities.year);
 		IEventsResource resource = cr.wrap(IEventsResource.class);
 
 		try {
