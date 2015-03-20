@@ -1,0 +1,1 @@
+Application used for events to get information from students
